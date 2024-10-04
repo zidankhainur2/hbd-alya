@@ -39,7 +39,7 @@ const AboutPage = () => {
     {
       src: "https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/gift/gift2.jpg",
       description:
-        "Ini kalo kamu nanya kenapa fotonya blum dipajang, karena kamar saya masih berantakan hehe.",
+        "Ini kalo kamu nanya kenapa fotonya blum dipajang, karena kamar saya masih berantakan hehe. oiyaa buat suratnya juga kadang kalo kangen aku baca lagi <3",
     },
     {
       src: "https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/gift/gift3.jpg",
@@ -60,7 +60,7 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-dark text-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-4">
         <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 sm:mb-12">
           Hallo Alya,
         </h1>
@@ -100,20 +100,6 @@ const AboutPage = () => {
               <CarouselContent>
                 <CarouselItem className="flex flex-col items-center justify-center p-4">
                   <a
-                    href="https://dpr-app-mauve.vercel.app/cek-kodam"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="transition-transform hover:scale-110"
-                  >
-                    <Ghost className="h-16 w-16 mb-2 text-blue-400 hover:text-blue-300" />
-                  </a>
-                  <h3 className="text-lg font-semibold">Cek Kodam</h3>
-                  <p className="text-center text-sm text-gray-400">
-                    Periksa kodammu hari ini apa
-                  </p>
-                </CarouselItem>
-                <CarouselItem className="flex flex-col items-center justify-center p-4">
-                  <a
                     href="https://dpr-app-mauve.vercel.app/love-meter"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -126,9 +112,23 @@ const AboutPage = () => {
                     Ukur love metermu, kemarin pas aku tes kita 99% si wkwk
                   </p>
                 </CarouselItem>
+                <CarouselItem className="flex flex-col items-center justify-center p-4">
+                  <a
+                    href="https://dpr-app-mauve.vercel.app/cek-kodam"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-transform hover:scale-110"
+                  >
+                    <Ghost className="h-16 w-16 mb-2 text-blue-400 hover:text-blue-300" />
+                  </a>
+                  <h3 className="text-lg font-semibold">Cek Kodam</h3>
+                  <p className="text-center text-sm text-gray-400">
+                    Periksa kodammu hari ini apa
+                  </p>
+                </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="ml-8 -mt-10" />
+              <CarouselNext className="mr-8 -mt-10" />
             </Carousel>
           </CardContent>
         </Card>

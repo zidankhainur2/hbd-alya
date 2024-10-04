@@ -49,20 +49,21 @@ export default function Navbar() {
               Home
             </Link>
           </li>
-          <li>
-            <Link
-              href="/album"
-              className="text-gray-300 font-normal text-sm hover:text-white"
-            >
-              Album
-            </Link>
-          </li>
+
           <li>
             <Link
               href="/About"
               className="text-gray-300 font-normal text-sm hover:text-white"
             >
               About
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/album"
+              className="text-gray-300 font-normal text-sm hover:text-white"
+            >
+              Album
             </Link>
           </li>
           <li>
@@ -104,20 +105,21 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                href="/album"
-                className="text-gray-300 font-normal text-sm hover:text-white hover:font-semibold hover:underline transition-all duration-200 ease-in-out"
-              >
-                Album
-              </Link>
-            </li>
+
             <li>
               <Link
                 href="/About"
                 className="text-gray-300 font-normal text-sm hover:text-white hover:font-semibold hover:underline transition-all duration-200 ease-in-out"
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/album"
+                className="text-gray-300 font-normal text-sm hover:text-white hover:font-semibold hover:underline transition-all duration-200 ease-in-out"
+              >
+                Album
               </Link>
             </li>
             <li>

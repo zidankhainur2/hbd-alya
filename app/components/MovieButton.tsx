@@ -47,9 +47,9 @@ export default function MovieButton() {
             bentuk kamu ngehargain aku yang udah bikin ini hehe. oh iya kamu
             bisa ke menu{" "}
             <a href="/About" className="text-red-500">
-              About
+              About (ini bisa diteken)
             </a>{" "}
-            buat liat tutorial webnya!
+            buat liat lanjutan dari kata kataku tadi!
           </DialogDescription>
         </div>
         <DialogFooter className="sm:justify-start">
