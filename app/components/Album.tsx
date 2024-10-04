@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link";
 
 export default function Album() {
   return (
@@ -9,72 +9,68 @@ export default function Album() {
         Lookout our Album
       </p>
       <div className="flex flex-col pb-16 gap-4">
-        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <Image
-            alt="image1"
-            src="https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/alya/alya1.jpg"
-            className="absolute inset-0 h-full w-full object-cover"
-            width={500}
-            height={500}
-          />
+        <Link href="/album/alya" className="block">
+          <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+            <Image
+              alt="image1"
+              src="https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/alya/alya1.jpg"
+              className="absolute inset-0 h-full w-full object-cover"
+              width={500}
+              height={500}
+            />
 
-          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div className="p-4 sm:p-6">
-              <p className="block text-xs text-white/90">15</p>
-
-              {/* Wrap with Link */}
-              <Link href="/album/alya">
+            <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div className="p-4 sm:p-6">
+                <p className="block text-xs text-white/90">15</p>
                 <h3 className="mt-0.5 text-lg text-white cursor-pointer">
                   Foto Alya
                 </h3>
-              </Link>
+              </div>
             </div>
-          </div>
-        </article>
-        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <Image
-            alt="fotbar"
-            src="https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/fotbar/fotbar1.jpg"
-            className="absolute inset-0 h-full w-full object-cover"
-            width={500}
-            height={500}
-          />
+          </article>
+        </Link>
 
-          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div className="p-4 sm:p-6">
-              <p className="block text-xs text-white/90">9</p>
+        <Link href="/album/fotbar" className="block">
+          <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+            <Image
+              alt="fotbar"
+              src="https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/fotbar/fotbar1.jpg"
+              className="absolute inset-0 h-full w-full object-cover"
+              width={500}
+              height={500}
+            />
 
-              {/* Wrap with Link */}
-              <Link href="/album/fotbar">
+            <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div className="p-4 sm:p-6">
+                <p className="block text-xs text-white/90">9</p>
                 <h3 className="mt-0.5 text-lg text-white cursor-pointer">
                   Fotbar Ceunah
                 </h3>
-              </Link>
+              </div>
             </div>
-          </div>
-        </article>
-        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-          <Image
-            alt="fotbar"
-            src="https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/dpr/dpr4.jpg"
-            className="absolute inset-0 h-full w-full object-cover"
-            width={500}
-            height={500}
-          />
+          </article>
+        </Link>
 
-          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div className="p-4 sm:p-6">
-              <p className="block text-xs text-white/90">16</p>
+        <Link href="/album/dpr" className="block">
+          <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+            <Image
+              alt="fotbar"
+              src="https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/dpr/dpr4.jpg"
+              className="absolute inset-0 h-full w-full object-cover"
+              width={500}
+              height={500}
+            />
 
-              {/* Wrap with Link */}
-              <Link href="/album/dpr">
+            <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+              <div className="p-4 sm:p-6">
+                <p className="block text-xs text-white/90">16</p>
                 <h3 className="mt-0.5 text-lg text-white cursor-pointer">
                   DPR
                 </h3>
-              </Link>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+        </Link>
       </div>
     </div>
   );

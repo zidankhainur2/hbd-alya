@@ -46,8 +46,8 @@ export default function MovieButton() {
             Plss banget tolong explore web ini keseluruhan yaa, anggap aja itu
             bentuk kamu ngehargain aku yang udah bikin ini hehe. oh iya kamu
             bisa ke menu{" "}
-            <a href="#" className="text-red-500">
-              about
+            <a href="/About" className="text-red-500">
+              About
             </a>{" "}
             buat liat tutorial webnya!
           </DialogDescription>
