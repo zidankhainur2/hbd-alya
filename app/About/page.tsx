@@ -18,6 +18,7 @@ import {
 import { Ghost, HeartPulse, X } from "lucide-react";
 import Image from "next/image";
 import { Dialog, DialogContent, DialogClose } from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 
 interface GiftImage {
   src: string;
@@ -58,6 +59,11 @@ const AboutPage = () => {
     setIsModalOpen(true);
   };
 
+  const [isOpen, setIsOpen] = useState(true);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <div className="min-h-screen bg-dark text-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-4">
@@ -81,6 +87,17 @@ const AboutPage = () => {
               pusing, mau ngirim kesananya juga gatau gimana hehe. Jadi aku
               bikin ini karena yaa cuma ini yang kebetulan aku bisa. Maaf ya
               kalo ini ga sesuai ekspetasi kamu.
+            </p>
+            <br />
+            <br />
+            <p className="text-sm sm:text-base text-gray-300">
+              Oh iyaa aku juga mau ngasih tau, kalo sebenernya ada 1 halaman
+              yang tersembunyi di web ini, nah itu bisa kebuka pas kondisi
+              tertentu terpenuhi. kondisinya kek apa? aku gamau ngasih tau kamu
+              wleee. ada 2 cara sebenernya: 1. Penuhin Kondisi yang gatau itu
+              apa, 2. Bikin cara gimana caranya biar aku kasih tau kondisinya
+              tuh apa. Semangat yhh kalo penasaran. isi halamannya bisa bikin
+              anda terkejut mwehehee. Semangat!!
             </p>
           </CardContent>
         </Card>
@@ -185,6 +202,44 @@ const AboutPage = () => {
           </div>
         </DialogContent>
       </Dialog>
+
+      <Card className="mb-8 bg-gray-800 border-gray-700 mx-5 my-4">
+        <CardHeader>
+          <Button onClick={toggleMenu}>
+            <CardTitle className="text-xl sm:text-2xl text-white">
+              Secret!!
+            </CardTitle>
+          </Button>
+          <CardDescription className="text-gray-400 text-center">
+            ada something yang kamu harus tau
+          </CardDescription>
+        </CardHeader>
+        {isOpen ? (
+          <CardContent className="hidden">
+            <p className="text-sm sm:text-base text-gray-300">
+              Oh iyaa aku juga mau ngasih tau, kalo sebenernya ada 1 halaman
+              yang tersembunyi di web ini, nah itu bisa kebuka pas kondisi
+              tertentu terpenuhi. kondisinya kek apa? aku gamau ngasih tau kamu
+              wleee. ada 2 cara sebenernya: 1. Penuhin Kondisi yang gatau itu
+              apa, 2. Bikin cara gimana caranya biar aku kasih tau kondisinya
+              tuh apa. Semangat yhh kalo penasaran. isi halamannya bisa bikin
+              anda terkejut mwehehee. Semangat!!
+            </p>
+          </CardContent>
+        ) : (
+          <CardContent>
+            <p className="text-sm sm:text-base text-gray-300">
+              Oh iyaa aku juga mau ngasih tau, kalo sebenernya ada 1 halaman
+              yang tersembunyi di web ini, nah itu bisa kebuka pas kondisi
+              tertentu terpenuhi. kondisinya kek apa? aku gamau ngasih tau kamu
+              wleee. ada 2 cara sebenernya: 1. Penuhin Kondisi yang gatau itu
+              apa, 2. Bikin cara gimana caranya biar aku kasih tau kondisinya
+              tuh apa. Semangat yhh kalo penasaran. isi halamannya bisa bikin
+              anda terkejut mwehehee. Semangat!!
+            </p>
+          </CardContent>
+        )}
+      </Card>
     </div>
   );
 };
