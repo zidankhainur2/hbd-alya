@@ -59,7 +59,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="#"
+              href="/About"
               className="text-gray-300 font-normal text-sm hover:text-white"
             >
               About
@@ -114,7 +114,7 @@ export default function Navbar() {
             </li>
             <li>
               <Link
-                href="#"
+                href="/About"
                 className="text-gray-300 font-normal text-sm hover:text-white hover:font-semibold hover:underline transition-all duration-200 ease-in-out"
               >
                 About
