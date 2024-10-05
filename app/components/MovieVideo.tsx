@@ -4,7 +4,7 @@ export default function MovieVideo() {
   return (
     <div className="h-[55vh] lg:h-[60vh] w-full flex justify-start items-center">
       <video
-        // src="https://utfs.io/f/11d84bc6-c825-42d0-a2ca-f80204c2f5b3-v0hcpd.mp4"
+        src="https://utfs.io/f/vhR9ZfNeb6znLrcVHhY249QWeP15cDptuANZOrl8gadbHKTS"
         poster="https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/alya/alya5.jpg"
         autoPlay
         muted

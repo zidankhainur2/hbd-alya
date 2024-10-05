@@ -42,7 +42,7 @@ export default function Album() {
 
             <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
               <div className="p-4 sm:p-6">
-                <p className="block text-xs text-white/90">9</p>
+                <p className="block text-xs text-white/90">10</p>
                 <h3 className="mt-0.5 text-lg text-white cursor-pointer">
                   Fotbar Ceunah
                 </h3>

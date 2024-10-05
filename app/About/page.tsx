@@ -88,17 +88,6 @@ const AboutPage = () => {
               bikin ini karena yaa cuma ini yang kebetulan aku bisa. Maaf ya
               kalo ini ga sesuai ekspetasi kamu.
             </p>
-            <br />
-            <br />
-            <p className="text-sm sm:text-base text-gray-300">
-              Oh iyaa aku juga mau ngasih tau, kalo sebenernya ada 1 halaman
-              yang tersembunyi di web ini, nah itu bisa kebuka pas kondisi
-              tertentu terpenuhi. kondisinya kek apa? aku gamau ngasih tau kamu
-              wleee. ada 2 cara sebenernya: 1. Penuhin Kondisi yang gatau itu
-              apa, 2. Bikin cara gimana caranya biar aku kasih tau kondisinya
-              tuh apa. Semangat yhh kalo penasaran. isi halamannya bisa bikin
-              anda terkejut mwehehee. Semangat!!
-            </p>
           </CardContent>
         </Card>
 
@@ -124,9 +113,12 @@ const AboutPage = () => {
                   >
                     <HeartPulse className="h-16 w-16 mb-2 text-red-400 hover:text-red-300" />
                   </a>
-                  <h3 className="text-lg font-semibold">Love Meter</h3>
+                  <h3 className="text-lg font-semibold text-white">
+                    Love Meter
+                  </h3>
                   <p className="text-center text-sm text-gray-400">
-                    Ukur love metermu, kemarin pas aku tes kita 99% si wkwk
+                    Ukur love metermu, kemarin pas aku tes kita <b>99%</b> si
+                    wkwk
                   </p>
                 </CarouselItem>
                 <CarouselItem className="flex flex-col items-center justify-center p-4">
@@ -158,7 +150,7 @@ const AboutPage = () => {
             <CardDescription className="text-gray-400">
               Oh iyaa aku juga mau laporan tentang hadiah hadiah yang udah kamu
               kasih. Aku selalu nyimpen semuanya kok. Jadi aku harap kamu juga
-              selalu inget sama hadiah ku ini yaa!
+              selalu inget sama hadiah ku ini yaa! (fyi gambarnya bisa di klik)
             </CardDescription>
           </CardHeader>
           <CardContent>
@@ -205,13 +197,16 @@ const AboutPage = () => {
 
       <Card className="mb-8 bg-gray-800 border-gray-700 mx-5 my-4">
         <CardHeader>
-          <Button onClick={toggleMenu}>
-            <CardTitle className="text-xl sm:text-2xl text-white">
-              Secret!!
+          <Button
+            className=" p-5 mb-3 bg-blue-500/50 hover:bg-blue-500"
+            onClick={toggleMenu}
+          >
+            <CardTitle className="text-lg sm:text-2xl text-white">
+              Mini Secret Games
             </CardTitle>
           </Button>
           <CardDescription className="text-gray-400 text-center">
-            ada something yang kamu harus tau
+            ada something yang kamu harus tau, but u have to solve it alone hehe
           </CardDescription>
         </CardHeader>
         {isOpen ? (
@@ -228,14 +223,14 @@ const AboutPage = () => {
           </CardContent>
         ) : (
           <CardContent>
-            <p className="text-sm sm:text-base text-gray-300">
-              Oh iyaa aku juga mau ngasih tau, kalo sebenernya ada 1 halaman
-              yang tersembunyi di web ini, nah itu bisa kebuka pas kondisi
-              tertentu terpenuhi. kondisinya kek apa? aku gamau ngasih tau kamu
-              wleee. ada 2 cara sebenernya: 1. Penuhin Kondisi yang gatau itu
-              apa, 2. Bikin cara gimana caranya biar aku kasih tau kondisinya
-              tuh apa. Semangat yhh kalo penasaran. isi halamannya bisa bikin
-              anda terkejut mwehehee. Semangat!!
+            <p className="text-sm sm:text-base text-gray-300 text-justify">
+              Oh iyaa aku juga mau ngasih tau, kalo sebenernya ada{" "}
+              <b>1 halaman yang tersembunyi</b> di web ini, nah itu bisa kebuka
+              pas kondisi tertentu terpenuhi. kondisinya kek apa? aku gamau
+              ngasih tau kamu wleee. ada 2 cara sebenernya: 1. Penuhin Kondisi
+              yang gatau itu apa, 2. Bikin cara gimana caranya biar aku kasih
+              tau kondisinya tuh apa. Semangat yhh kalo penasaran. isi
+              halamannya bisa bikin anda terkejut mwehehee. Semangat!!
             </p>
           </CardContent>
         )}

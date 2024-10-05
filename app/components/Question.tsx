@@ -35,7 +35,7 @@ export default function Question() {
 
   return (
     <div className="space-y-4 p-5">
-      <h1 className="text-2xl font-bold text-center text-white">FACT</h1>
+      <h1 className="text-2xl font-bold text-center text-white -my-2">FACT</h1>
       <p className="text-gray-400 text-sm text-center mb-6">
         Beberapa Fakta Menarik Tentang Alya Dari Aku
       </p>
@@ -45,19 +45,19 @@ export default function Question() {
             className="group border-s-4 border-sky-500 bg-gray-50 p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden"
             open={openStates[index]}
           >
-            <summary
-              className="flex cursor-pointer items-center justify-between gap-1.5"
-              onClick={() => toggleMenu(index)}
-            >
+            <summary className="flex cursor-pointer items-center justify-between gap-1.5">
               <h2 className="text-lg font-medium text-gray-900 dark:text-white">
                 {judulItem}
               </h2>
 
               <span className="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3 dark:bg-gray-800 dark:text-white">
                 {openStates[index] ? (
-                  <Plus className="size-5 shrink-0 transition duration-300" />
+                  <X
+                    className="size-5 shrink-0 transition duration-300"
+                    onClick={() => toggleMenu(index)}
+                  />
                 ) : (
-                  <X className="size-5 shrink-0 transition duration-300" />
+                  <Plus className="size-5 shrink-0 transition duration-300" />
                 )}
               </span>
             </summary>

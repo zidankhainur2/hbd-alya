@@ -14,6 +14,7 @@ export default function FotbarAlbum() {
     "https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/fotbar/fotbar7.jpg",
     "https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/fotbar/fotbar8.jpg",
     "https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/fotbar/fotbar9.jpg",
+    "https://wphcaxizypgvkbhwkqss.supabase.co/storage/v1/object/public/user%20image/fotbar/fotbar10.jpg",
 
     // Tambahkan lebih banyak URL gambar jika diperlukan
   ];
