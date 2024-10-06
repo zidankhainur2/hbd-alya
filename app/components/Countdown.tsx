@@ -11,26 +11,19 @@ const Countdown: React.FC = () => {
 
   const countDownDate = new Date("Aug 30, 2027 18:00:00").getTime();
 
+  // Update the countdown every second
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const distance = countDownDate - now;
 
-      if (distance < 0) {
-        clearInterval(interval);
-        setTimeLeft({
-          days: 0,
-          hours: 0,
-          minutes: 0,
-          seconds: 0,
-        });
-      } else {
+      if (distance > 0) {
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
         const hours = Math.floor(
           (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         );
         const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor(((distance % 1000) * 60) / 1000);
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
         setTimeLeft({
           days,
@@ -38,9 +31,18 @@ const Countdown: React.FC = () => {
           minutes,
           seconds,
         });
+      } else {
+        clearInterval(interval);
+        setTimeLeft({
+          days: 0,
+          hours: 0,
+          minutes: 0,
+          seconds: 0,
+        });
       }
     }, 1000);
 
+    // Clear interval on component unmount to avoid memory leaks
     return () => clearInterval(interval);
   }, [countDownDate]);
 
