@@ -1,4 +1,7 @@
+"use client";
+
 import Album from "../components/Album";
+import Countdown from "../components/Countdown";
 import MovieVideo from "../components/MovieVideo";
 import PopupPesan from "../components/PopUpPesan";
 
@@ -13,6 +16,7 @@ export default function Home() {
         </p>
       </a>
       <PopupPesan />
+      <Countdown />
     </div>
   );
 }
